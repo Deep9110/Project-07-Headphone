@@ -1,0 +1,139 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* nav */
+nav{
+    display: flex;
+    margin: 3rem 1.5rem;
+    padding-left: 3rem;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    font-size: 25px;
+    font-style: normal;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.nav-item-active-item{
+    color:#FE5E35;
+    margin: 1rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-item{
+    margin: 1rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:black;
+}
+
+.intro-section{
+    display: flex;
+}
+
+.left-section{
+    padding: 4rem;
+    width: 60%;
+}
+
+.left-section h3{
+    font-size:40px;
+    color: #1f1f1f;
+
+}
+.left-section h1{
+    font-family: "Fredoka One";
+    font-size:70px;
+    font-weight:normal;
+}
+.sub-headlines{
+    margin: 1rem;
+    padding:1rem 3rem;
+}
+
+.sub-headline{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 25px;
+    margin: 1.5rem;
+    
+}
+
+.sub-headline img{
+    background: #FE5E35;
+    padding: 7px;
+    border-radius: 50%;   
+}
+
+.left-section .text{
+    color:grey;
+}
+.action-btns{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: row;
+    gap: 15px;
+}
+.action-btn{
+    font-size: 20px;
+    border: 1px solid #FE5E35;
+    border-radius: 40px;
+    padding: 1rem 1.5rem; 
+    background: #FE5E35;
+    color: white;
+}
+.discount{
+    width: 120px;
+    height:120px;
+    position: absolute;
+    top: 85vh;
+    right: 32rem;
+}
+.discount-content h1, h4{
+    display: flex;
+    flex-direction:column;
+    top: 90vh;
+    position: absolute;
+    color: white;
+    font-family: "Fredoka One";
+    font-weight: normal;
+    
+}
+.discount-content h1{
+    position: absolute;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+}
+
+.dot{
+    
+    height: 25px;
+    width: 25px;
+    margin: 1.5rem;
+    border-radius:100%;
+    background: #1f1f1f;
+
+}
+
+.yellow-dot{
+    background: #ffff00
+}
+.tomato-dot{
+    background:#FE5E35;
+}
+
+.right-section .action-btn{
+    justify-content: center;
+    margin-left: 14rem;
+    margin-top: 2rem;
+}
