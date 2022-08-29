@@ -1,0 +1,265 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* nav */
+nav{
+    display: flex;  
+    padding:1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    font-size: 25px;
+    font-style: normal;
+    
+}
+.nav-item-active-item{
+    color:#FE5E35;
+    margin: 1rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.nav-item{
+    margin: 1rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color:black;
+}
+
+.intro-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    padding: 0rem 6rem;
+    gap:8rem;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    /* padding: 4rem; */
+    
+}
+
+.new{
+    display: flex;
+    gap: 2rem;
+}
+.new h3{
+    font-size:40px;
+    color: #1f1f1f;
+}
+
+.left-section h1{
+    font-family: "Fredoka One";
+    font-size:70px;
+    font-weight:normal;
+}
+.sub-headlines{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding:1rem 3rem;
+}
+
+.sub-headline{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 25px;
+    margin:0.2rem
+}
+
+.sub-headline img{
+    background: #FE5E35;
+    padding: 7px;
+    border-radius: 50%;   
+}
+
+/* .left-section .text{
+    color:grey;
+} */
+
+.bottom-line{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.action-btns{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0rem;
+    flex-direction: row;
+    gap: 15px;
+}
+.action-btn{
+    font-size: 18px;
+    border: 1px solid #FE5E35;
+    border-radius: 40px;
+    padding: 1rem 1.5rem; 
+    background: #FE5E35;
+    color: white;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+}
+/* .discount{
+    width: 120px;
+    height:120px;
+    position: absolute;
+    top: 85vh;
+    right: 31rem;
+   
+} */
+.headphone-div{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    padding: 0rem 1rem;
+    height:550px;
+    width:550px;
+    position:relative;
+}
+.headphone-image{
+    position:absolute;
+    height:550px;
+    width:550px;
+}
+.headphone-image img{
+    width:100%;
+    height:100%;
+    object-position: center;
+}
+.discount{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:absolute;
+    bottom:0;
+    height:120px;
+    width: 120px;
+}
+.discount img{
+    height:100%;
+    width:100%;
+    object-position: center;
+    object-fit: center;
+}
+.discount-content {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    line-height: 1.2;
+}
+.discount-content h4{
+    font-size: 1.2rem;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+}
+
+.buy{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.dot{   
+    height: 25px;
+    width: 25px;
+    margin: 1.5rem;
+    border-radius:100%;
+    background: #1f1f1f;
+}
+
+.yellow-dot{
+    background: #ffff00
+}
+.tomato-dot{
+    background:#FE5E35;
+}
+
+ .action-btn{
+    justify-content: center;
+    
+}
+
+/* media screen */
+
+/* @media only screen and (max-width: 768px)  {
+    .left-section h3 {
+        font-size: 30px;
+    }
+    .left-section h1 {
+        font-size: 55px;
+    }
+    .sub-headlines{
+        padding:1rem 2rem;
+    }
+    .sub-headline{
+        gap: 8px;font-size:18px;
+        margin:1rem
+    }
+
+    .headphone-div img{
+        height: 500px;
+        width:auto;
+    }
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .right-section{
+        width:50%;
+    }
+    .headphone-div{
+        height:450px;
+        width:400px;
+    }
+    .headphone-image{
+        height:450px;
+        width:400px;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 768px){
+    .nav-items{
+        display:none;
+        visibility:hidden;
+    }
+    .intro-section{
+        display:flex;
+        flex-direction: column-reverse;
+        padding:2rem;
+    }
+    .left-section{
+        width:100%;
+    }
+    .right-section{
+        width:100%;
+    }
+    .headphone-div{
+        height:100%;
+        width:100%;
+    }
+    .headphone-image{
+        height:350px;
+        width:350px;
+    }
+}
